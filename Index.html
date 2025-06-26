@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie's Cafe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Foodie's <span>Cafe</span></a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#category">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Delicious Meal is Here</h1>
+                <p>Experience the taste of perfection with our handcrafted dishes made from the finest ingredients</p>
+                <div class="hero-btns">
+                    <a href="#category" class="btn">Explore Menu</a>
+                    <a href="#contact" class="btn btn-secondary">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="category" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div id="menu-container">
+                <div class="card">
+                    <div class="food-img">
+                        <img src="assets/burger.jpg" alt="Burger">
+                    </div>
+                    <div class="food-details">
+                        <h3>Veggie Burger</h3>
+                        <p>Fresh vegetables with our special sauce</p>
+                        <span class="price">$8.99</span>
+                        <button class="add-to-cart">+ Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="food-img">
+                        <img src="assets/pizza.jpg" alt="Pizza">
+                    </div>
+                    <div class="food-details">
+                        <h3>Margherita Pizza</h3>
+                        <p>Classic pizza with fresh mozzarella and basil</p>
+                        <span class="price">$12.99</span>
+                        <button class="add-to-cart">+ Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="food-img">
+                        <img src="assets/pasta.png" alt="Pasta">
+                    </div>
+                    <div class="food-details">
+                        <h3>Spaghetti Carbonara</h3>
+                        <p>Creamy pasta with pancetta and parmesan</p>
+                        <span class="price">$10.99</span>
+                        <button class="add-to-cart">+ Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="food-img">
+                        <img src="assets/salad.png" alt="Salad">
+                    </div>
+                    <div class="food-details">
+                        <h3> Salad</h3>
+                        <p>Crispy romaine with croutons and dressing</p>
+                        <span class="price">$7.99</span>
+                        <button class="add-to-cart">+ Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="food-img">
+                        <img src="assets/cake.png" alt="Dessert">
+                    </div>
+                    <div class="food-details">
+                        <h3>Chocolate Cake</h3>
+                        <p>Rich chocolate cake with raspberry sauce</p>
+                        <span class="price">$6.99</span>
+                        <button class="add-to-cart">+ Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="food-img">
+                        <img src="assets/drinks.png" alt="Drink">
+                    </div>
+                    <div class="food-details">
+                        <h3> Lemon Juice</h3>
+                        <p>Homemade lemon juice with mint leaves</p>
+                        <span class="price">$3.99</span>
+                        <button class="add-to-cart">+ Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Us</h2>
+                    <p>Welcome to Foodie's Cafe, your go-to destination for delicious bites, cozy vibes, and unforgettable food experiences. Whether you're craving a hearty meal, a quick snack, or a soothing cup of coffee, we serve it all with love and flavor.</p>
+                    <p>At Foodie's Cafe, we blend creativity with quality ingredients to craft dishes that satisfy both heart and hunger. From our signature burgers and crispy fries to refreshing beverages and decadent desserts — everything is made fresh, just for you.</p>
+                    <p>Our mission is simple: to provide exceptional food with outstanding service in a warm, inviting atmosphere that feels like home.</p>
+                </div>
+                <div class="about-button"> 
+                    <a href="#contact" class="btn">Contact Us</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Foodie Street, Ahmedabad, India</p>
+                    <p><i class="fas fa-phone"></i> +91-9876543210</p>
+                    <p><i class="fas fa-envelope"></i> info@foodiescafe.com</p>
+                    <p><i class="fas fa-clock"></i> Open Daily: 8:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Foodie's Cafe</h3>
+                    <p>Your destination for delicious food and great ambiance. We serve quality food made with love and care.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#category">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 8am - 10pm</li>
+                        <li>Saturday: 9am - 11pm</li>
+                        <li>Sunday: 9am - 10pm</li>
+                    </ul>
+                </div>
+        </div>
+    </footer>
+</body>
+
+</html>

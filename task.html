@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>To-Do List</title>
+  <style>
+   body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  width: 350px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.task-area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-right: 10px;
+}
+
+#taskInput::placeholder {
+  color: #999;
+}
+
+#addBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addBtn:hover {
+  background-color: #45a049;
+}
+
+.task-display {
+  max-height: 200px;
+
+  overflow-y: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-right: 10px;
+}
+
+li {
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: #333;
+  transition: 0.3s ease;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+}
+
+li button {
+  background-color:tomato;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #d32f2f;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+     <h2> To-Do List</h2>
+     <div class="task-area">
+  <input type="text" id="taskInput" placeholder="Enter a task..." />
+  <button id="addBtn">Add</button>
+  
+</div>
+<div class="task-display">
+  <ul id="taskList"></ul>
+  </div>
+
+  </div>
+ 
+  <script src="task.js">
+    
+  </script>
+</body>
+</html>
